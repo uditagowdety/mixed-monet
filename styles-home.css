@@ -1,0 +1,76 @@
+.trial{
+    width:100%;
+}
+
+body{
+    font-family: helvetica, sans-serif;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    height:100vh;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.text-slogan{
+    font-size:small;
+    position: absolute;
+    top:1%;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Prevents scrollbars from appearing */
+}
+
+@keyframes fadeAndColorChange {
+    0% {
+        opacity: 1;
+        background-color: red; /* Initial color */
+        box-shadow: 0 0 10px 5px red; /* Initial color for the shadow */
+    }
+    100% {
+        opacity: 0;
+        background-color: blue; /* Final color */
+        box-shadow: 0 0 10px 5px blue; /* Final color for the shadow */
+    }
+}
+
+.trail {
+    position: absolute;
+    width: 15px;  /* Adjust size as needed */
+    height: 15px; /* Adjust size as needed */
+    background-color: red; /* Initial color */
+    border-radius: 50%; /* Makes the trail circular */
+    pointer-events: none; /* Prevents the trail from interfering with cursor events */
+    animation: fadeAndColorChange 2s linear forwards; /* Adjust duration as needed */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.resizable-image{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    size: 10%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 10px; /* Adjust horizontal margin between images */
+}
+
+.bottom-text{
+    display:flex;
+    /* justify-content: center; */
+    /* align-content: center; */
+    font-size: small;
+    position: absolute;
+    left:50%;
+    bottom:1%;
+    transform: translate(-50%);
+}
+
