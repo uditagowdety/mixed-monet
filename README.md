@@ -1,2 +1,2 @@
 # mixed-monet
-first trial at a website wahoo
+first trial at a website
